@@ -1,0 +1,18 @@
+
+{
+  "manifest_version": 3,
+  "name": "Tab Organizer",
+  "version": "1.0",
+  "description": "An extension that helps users keep track of existing tabs.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {"default_icon": "icon.png"},
+  "web_accessible_resources": [
+    {
+      "resources": ["tabs.html", "tabs.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
